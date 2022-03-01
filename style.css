@@ -1,0 +1,306 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration:none;
+    list-style:none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(Helvetica\ Neue\ Light.ttf);
+  }
+
+  @font-face {
+    font-family: mySecondFont;
+    src: url(Helvetica\ Neue\ Medium.ttf);
+  }
+
+  @font-face {
+    font-family: myThirdFont;
+    src: url(Helvetica\ Neue\ Bold.woff);
+  }
+
+  @font-face {
+    font-family: myFourthFont;
+    src: url(Helvetica\ Neue\ Regular.woff);
+  }
+
+  @font-face {
+    font-family: regular;
+    src: url(Helvetica\ Neue\ Regular.svg);
+  }
+
+  @font-face {
+    font-family: regular1;
+    src: url(Helvetica\ Neue.ttf);
+  }
+
+   @font-face {
+    font-family: myFiveFont;
+    src: url(Kano\ regular\ Regular.ttf);
+  }
+
+body{
+    font-family:montserrat;
+}
+
+
+nav{
+    height:110px;
+    width:100%;
+}
+
+label.logo{
+    color:white;   
+    padding: 0 50px;
+  
+}
+
+.logo-img{
+  height:70px;
+  width:67px;
+  margin-top:20px
+}
+
+nav ul{
+    float:right;
+    margin-right:30px;
+    margin-top: 15px;
+}
+
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    font-size:1.2vw;
+    padding: 13px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: mySecondFont;
+    color:black;
+}
+
+a.active1,a:hover{
+    background: #0076ff;
+    transition: .5s;
+    color:white;
+     text-align: center;
+}
+
+.backgroundImage {
+   position:relative;
+   text-align: center;
+   color:white
+  }
+
+  .left{
+    position: absolute;
+    top:50px;
+    left:60px;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.left-para1{
+  font-family: mySecondFont;
+  font-size:1.6vw;
+  text-transform: uppercase;
+}
+
+.left-para2{
+  font-family: myThirdFont;
+  font-size:4.2vw;
+  text-transform: uppercase;
+}
+
+.right{
+  position: absolute;
+  bottom: 45px;
+  right: 25px;
+  text-align:right;
+}
+
+.right-para{
+  font-family: mySecondFont;
+  text-transform: uppercase;
+  font-size:1.5vw
+}
+
+.container {
+  width:88%;
+  height:700px;
+  margin-bottom:20px;
+  padding-top:20px;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+#st-box {
+  float:left;
+  width:600px;
+  height:750px;        
+  text-align: left;
+}
+
+.st-para1{
+  font-family:mySecondFont;
+  font-size:1.5vw;
+  color: #0076ff;
+}
+
+.st-para2{
+  font-family:myThirdFont;
+  text-transform: uppercase;
+  color:black
+}
+
+#rd-box {
+  float:right;
+  width:350px;
+  height:400px;
+  background-color:#FAFAFC;
+  border-radius:20px;
+  margin-top:10%;
+  text-align: left;
+  padding-top:50px;
+  padding-left:30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 5px 6px #00000029;
+}
+
+.para1{
+  font-family:regular1;
+  font-size:1.3vw
+}
+
+button{
+  background-color: #0076ff; 
+  color: white; 
+  border-radius: 10px;
+  height:50px;
+  width:200px;
+  font-family:mySecondFont;
+  border: none;
+  border-width : 0; 
+  border : 0 ;
+  font-size:15px;
+  margin-top:60px;
+  margin-left:50px
+}
+
+.active {
+  list-style: none;
+  font-family:regular1;
+  line-height: 20px;
+}
+
+.active::before {
+  content: "\2022";
+  color: #0076ff;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: 0em;
+  font-size: 30px;
+}
+
+.rd-para{
+  font-family:mySecondFont;
+  font-size:20px
+}
+
+.list{
+  margin-top: 10px;
+}
+
+
+
+.lowerbackgroundImage{
+  position:relative;
+  text-align: center;
+  color:white ;
+  margin-bottom: 30px;
+}
+
+.content{
+  position: absolute;
+  margin-top:40px;
+  top: 10%;
+  right: 5%;
+  text-align: left;
+}
+
+.lowerpara{
+  font-family:myThirdFont;
+  text-transform: uppercase;
+  font-size:3vw
+}
+
+.para2{
+  font-family:regular1;
+  font-size:1.4vw
+}
+
+.footer{
+    height:200px;
+    width:100%;
+    background-color: #0076ff;
+    align-content: center;
+    color:white;  
+}
+
+.footer-img{
+  height:60%;
+  width:14%;
+  margin-top:30px
+}
+
+.footer-para{
+  font-family: myFiveFont;
+  font-size:20px
+}
+
+
+@media screen and (max-width: 900px) {
+
+  .footer{
+      height:250px;
+      width:100%;
+      background-color: #0076ff;
+      align-content: center;
+      color:white;  
+  }
+    
+  .footer-img{
+      height:40%;
+    width:25%;
+    margin-top:50px
+    }
+  
+  .footer-para {
+      font-size: 3vw; 
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .footer{
+      height:200px;
+      width:100%;
+      background-color: #0076ff;
+      align-content: center;
+      color:white;  
+  }
+  
+    .footer-img{
+    height:35%;
+    width:23%;
+    margin-top:50px
+    } 
+      .footer-para {
+      font-size: 3.5vw; 
+    }
+  }
